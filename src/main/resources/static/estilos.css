@@ -1,0 +1,168 @@
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+
+
+}
+/* All rows override */
+  .row>*{
+    padding-left: 0;
+  }
+
+
+/* NAVBAR */
+
+#navbar{
+  background-color: #0b132b;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+#navbar .nav-link:hover{
+    color: rgb(153, 3, 3);
+}
+
+
+
+/* PRIMERA FILA/FORMULARIO */
+  #firstRow{
+    height: 650px;
+    background-size: cover; 
+    background-image: url(IMGS/fight.jpg);
+  
+  }
+
+  #firstRow h2{
+    margin-left: 15px;
+
+  }
+
+  #containerForm{
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    background-color: none;
+    text-align: center;
+    background-color: rgba(62, 72, 131, 0.5);
+  
+  }
+  #formularioID{
+      height: 555px;
+  }
+
+   #textoBienvenida h1{
+
+    color: #FFFFFF;
+    text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0,0,0,0.9);
+    margin-top: 250px;
+    font-size:65px;
+
+  }
+  @media (max-width:600px){
+    #textoBienvenida{
+      display: none;
+    }
+  }
+
+
+
+
+
+/* SEGUNDA FILA/HORARIO*/
+  #secondRow{
+    background-color: #0b132b;
+  
+  } 
+
+  .table-container h2.table-heading{
+    padding-top: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 1px solid #eee;
+    font-size: 2em;
+    padding-bottom: 15px;
+    color: #fff;
+    background-color: #0b132b;
+  }
+  
+  .table-container table{
+    width: 100%;
+    background-color: #fff;
+    color: #222;
+    /* box-shadow: 0 4px 15px -8px rgba(255, 255, 255, 0.4); */
+    border-collapse: collapse;
+  }
+  .table-container table thead tr{
+    background-color: #0b132b;
+    color: #fff;
+  }
+  .table-container table td,
+  .table-container table th{
+    padding: 35px 29px;
+    text-align: center;
+  }
+  .table-container table tr{
+  
+     border-bottom: 1px solid #eee;
+  }
+  
+  @media (max-width:600px){
+     .table-container td{
+        empty-cells: hide;
+     }
+     .table-container table thead{
+         display: none;
+     }
+     .table-container table{
+       background-color:#0B132B ;
+       color: #fff;
+     }
+     
+     .table-container table td,
+     .table-container table tr,
+     .table-container table th{
+         display: block;
+         padding: 12px;
+     }
+  
+     .table-container table td[data-heading]::before{
+         content: attr(data-heading)": ";
+         font-weight: bold;
+     }
+  }
+  
+
+
+
+/* TERCERA FILA */
+
+#ubi{
+  font-weight: bold;
+}
+
+#thirdRow #COL1-3R{
+
+  }
+
+#thirdRow #COL2-3R{
+
+  background-color: #0b132b;
+}
+
+
+
+
+/* BTN FLOTANTE */
+#wsp_icon{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+  z-index:100;
+  
+}
+
